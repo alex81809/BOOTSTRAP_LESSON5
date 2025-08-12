@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scrollspy</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+
+    <style>
+        /* Sections */
+        #section1 {
+            padding-top: 70px;
+            height: 700px;
+            color: white;
+            background-color: #ff8c00;
+        }
+
+        #section2 {
+            padding-top: 70px;
+            height: 700px;
+            color: #f8f8f8;
+            background-color: rgb(57, 173, 76);
+        }
+
+        #section3 {
+            padding-top: 70px;
+            height: 700px;
+            color: white;
+            background-color: #4682b4;
+        }
+
+        /* Texts */
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h5 {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Containers */
+        .container-fluid {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myNavbar" data-offset="60">
+
+    <nav id="myNavbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsedNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">My Site</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="#myCollapsedNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#section1">About Us</a></li>
+                    <li><a href="#section2">Our Mission</a></li>
+                    <li><a href="#section1">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="section1" class="container-fluid">
+        <h1>About Us</h1>
+        <h3>Welcome to Our Page</h3>
+        <h5>We are a company dedicated to providing high-quality solutions. Our team consists of passionate individuals
+            committed to innovation and excellence. We believe in empowering out users through accessible and intuitive
+            technology. </h5>
+        <p>Scroll down to see more sections!</p>
+    </div>
+
+    <div id="section2" class="container-fluid">
+        <h1>Our Mission</h1>
+        <h3>What we Strive For</h3>
+        <h5>Our mission is to inspire, educate, and empower individuals to achieve their full potential. We aim to
+            create a positive impact through our products and services, fostering growth and learning in a supportive environment.
+        </h5>
+        <p>End of content.</p>
+    </div>
+</body>
+
+</html>
